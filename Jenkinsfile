@@ -1,4 +1,4 @@
-pipeline {
+ipipeline {
   agent any
   
   environment {
@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git branch: 'master', url: "${GITHUB_REPO_URL}"
+        git branch: 'main', url: "${GITHUB_REPO_URL}"
       }
     }
     
